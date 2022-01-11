@@ -1,0 +1,15 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    wego.weave.works/app-identifier: wego-e767716ff6df8be6c965d09243868942
+  name: podinfo
+  namespace: wego-system
+spec:
+  branch: main
+  config_url: ssh://git@github.com/nikimanoledaki/test-2.git
+  deployment_type: helm
+  path: podinfo
+  source_type: helm
+  url: https://weaveworks.github.io/profiles-examples
